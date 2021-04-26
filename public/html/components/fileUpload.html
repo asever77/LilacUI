@@ -1,0 +1,55 @@
+<input type="hidden" id="uiJsName" value="pageFileUpload">
+
+<div class="tit-catagory">Components Form</div>
+<div class="tit-wrap">
+	<h1 class="h-1">File Upload</h1>
+</div>
+<p class="txts-m">*멀티 파일업로드 작업 필요</p>
+
+<h2 class="h-2">Examples</h2>
+<h3 class="h-3">base type</h3>
+<div class="btn-wrap txta-l">
+	<form>
+		<div class="ui-file btn-base" id="addfileWrap">
+			<input type="file" class="ui-file-inp" id="addfileInp" multiple>
+			<span>file upload</span>
+		</div>
+		<div class="ui-file-list" aria-labelledby="addfileInp"></div>
+
+		<div class="ui-file btn-base" id="addfileWrap2">
+			<input type="file" class="ui-file-inp" id="addfileInp2" multiple>
+			<span>file upload</span>
+		</div>
+		<div class="ui-file-list" aria-labelledby="addfileInp2"></div>
+	</form>
+</div>
+
+<h2 class="h-2">HTML Structure</h2>
+<h3 class="h-3">basic type</h3>
+<div class="box-code">
+<pre>
+<code>
+&lt;div class="ui-file btn-base" id="addfileWrap"&gt;
+	&lt;input type="file" class="ui-file-inp" id="addfileInp" multiple&gt;
+	&lt;span&gt;file upload&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="ui-file-list" aria-labelledby="addfileInp"&gt;
+
+	&lt;div class="ui-file-item n0"&gt;bg_comment.png&lt;/div&gt;
+	&lt;button type="button" class="ui-file-del"&gt;&lt;span class="hide"&gt;Delete attachment&lt;/span&gt;&lt;/button&gt;
+	...
+&lt;/div&gt;
+</code>
+</pre>
+</div>
+				<h2 class="h-2">Javascript</h2>
+				<h3 class="h-3">$plugins.uiFileUpload</h3>
+<div class="box-code">
+<pre>
+<code>
+$plugins<span class="na">.uiFileUpload</span>();
+</code>
+</pre>
+</div>
+
