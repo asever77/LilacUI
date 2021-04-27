@@ -1,10 +1,12 @@
 {
-  "name": "lilacUI",
+  "name": "LILAC UI",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "homepage": ".",
   "scripts": {
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "start": "node liveserver.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
