@@ -980,7 +980,6 @@ html.col-12 .coln12 {
 }
 
 .page-layout .in-item,
-.page-layout [class*="fx-item"],
 .page-layout .fl-item-r,
 .page-layout .fl-item-l {
 	border: 1px dashed #ccc;
@@ -990,7 +989,6 @@ html.col-12 .coln12 {
 
 .test-flex1 [class*="fx-item"]:nth-child(1) {
 	min-height: 90px;
-	padding-top: 15px
 }
 
 .test-flex1 [class*="fx-item"]:nth-child(2) {
@@ -1000,7 +998,9 @@ html.col-12 .coln12 {
 .test-flex1 [class*="fx-item"]:nth-child(3) {
 	min-height: 30px;
 }
-
+.test-flex1 .box-base {
+	height:100%;
+}
 
 .box-base .in-item:first-child,
 .box-base .in-item+.in-item {
