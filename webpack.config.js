@@ -14,6 +14,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/ui.base.js'
   },
+  target: ['web', 'es5'],
   plugins: [
     // 컴파일 + 번들링 CSS 파일이 저장될 경로와 이름 지정
     new MiniCssExtractPlugin({ filename: 'css/ui.base.css' })
