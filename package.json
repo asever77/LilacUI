@@ -5,8 +5,7 @@
   "license": "MIT",
   "homepage": ".",
   "scripts": {
-    "build": "webpack -w",
-    "start": "node liveserver.js"
+    "build": "webpack -w"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
