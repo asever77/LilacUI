@@ -10080,6 +10080,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         el.appendChild(div.children[0]);
       }
     },
+    prependHtml: function prependHtml(el, str, htmltag) {
+      var _htmltag = !!htmltag ? htmltag : 'div';
+
+      var div = doc.createElement(_htmltag);
+      div.innerHTML = str;
+
+      while (div.children.length > 0) {
+        el.insertBefore(div.children[0], el.firstChild);
+      }
+    },
 
     /**
     * delete parent tag : 지정된 요소의 부모태그 삭제
@@ -10296,7 +10306,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           html_buttonX.setAttribute('aria-hidden', true);
           html_buttonX.setAttribute('aria-label', 'vertical scroll button');
           html_buttonX.setAttribute('tabindex', '-1');
-          html_buttonX.dataset.scrollxy = 'x';
+          html_buttonX.dataset.scrollxy = 'x'; // Global.uiParts.appendHtml(html_barwrap, html_button);
+          // Global.uiParts.appendHtml(html_barwrapX, html_buttonX);
+          // Global.uiParts.prependHtml(el_scrollbar, html_barwrap);
+          // Global.uiParts.prependHtml(el_scrollbar, html_barwrapX);
+
           html_barwrap.append(html_button);
           html_barwrapX.append(html_buttonX);
           el_scrollbar.prepend(html_barwrap);
@@ -10600,7 +10614,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         clearTimeout(this.timerH);
         var newNode = document.createElement('div');
         newNode.classList.add('ui-loading');
-        newNode.innerHTML = htmlTag;
+        newNode.innerHTML = htmlTag; //Global.uiParts.appendHtml(target,newNode);
+
         target.append(newNode);
         target.dataset.ing = true;
         this.timerS = setTimeout(function () {

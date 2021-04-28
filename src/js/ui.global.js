@@ -150,6 +150,16 @@
 				el.appendChild(div.children[0]);
 			}
 		},
+		prependHtml: (el, str, htmltag) => {
+			const _htmltag = !!htmltag ? htmltag : 'div';
+			const div = doc.createElement(_htmltag);
+
+			div.innerHTML = str;
+
+			while (div.children.length > 0) {
+				el.insertBefore(div.children[0], el.firstChild);
+			}
+		},
 
 		/**
 		* delete parent tag : 지정된 요소의 부모태그 삭제
@@ -370,6 +380,10 @@
 				html_buttonX.setAttribute('tabindex', '-1');
 				html_buttonX.dataset.scrollxy = 'x';
 				
+				// Global.uiParts.appendHtml(html_barwrap, html_button);
+				// Global.uiParts.appendHtml(html_barwrapX, html_buttonX);
+				// Global.uiParts.prependHtml(el_scrollbar, html_barwrap);
+				// Global.uiParts.prependHtml(el_scrollbar, html_barwrapX);
 				html_barwrap.append(html_button);
 				html_barwrapX.append(html_buttonX);
 				el_scrollbar.prepend(html_barwrap);
@@ -662,6 +676,7 @@
 
 			newNode.classList.add('ui-loading');
 			newNode.innerHTML = htmlTag;
+			//Global.uiParts.appendHtml(target,newNode);
 			target.append(newNode);
 			target.dataset.ing = true;
 
