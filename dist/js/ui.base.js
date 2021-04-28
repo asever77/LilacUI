@@ -10306,7 +10306,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           html_buttonX.setAttribute('aria-hidden', true);
           html_buttonX.setAttribute('aria-label', 'vertical scroll button');
           html_buttonX.setAttribute('tabindex', '-1');
-          html_buttonX.dataset.scrollxy = 'x'; // Global.uiParts.appendHtml(html_barwrap, html_button);
+          html_buttonX.dataset.scrollxy = 'x'; // Global.uiParts.appendHtml(el_scrollbar, html_barwrap);
+          // Global.uiParts.appendHtml(el_scrollbar, html_barwrapX);
+          // Global.uiParts.appendHtml(html_barwrap, html_button);
           // Global.uiParts.appendHtml(html_barwrapX, html_buttonX);
           // Global.uiParts.prependHtml(el_scrollbar, html_barwrap);
           // Global.uiParts.prependHtml(el_scrollbar, html_barwrapX);

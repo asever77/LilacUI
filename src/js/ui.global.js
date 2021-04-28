@@ -379,11 +379,16 @@
 				html_buttonX.setAttribute('aria-label', 'vertical scroll button');
 				html_buttonX.setAttribute('tabindex', '-1');
 				html_buttonX.dataset.scrollxy = 'x';
-				
+
+				// Global.uiParts.appendHtml(el_scrollbar, html_barwrap);
+				// Global.uiParts.appendHtml(el_scrollbar, html_barwrapX);
+
 				// Global.uiParts.appendHtml(html_barwrap, html_button);
 				// Global.uiParts.appendHtml(html_barwrapX, html_buttonX);
+
 				// Global.uiParts.prependHtml(el_scrollbar, html_barwrap);
 				// Global.uiParts.prependHtml(el_scrollbar, html_barwrapX);
+				
 				html_barwrap.append(html_button);
 				html_barwrapX.append(html_buttonX);
 				el_scrollbar.prepend(html_barwrap);
