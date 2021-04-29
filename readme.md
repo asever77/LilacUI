@@ -10,6 +10,18 @@ $ npm install @babel/polyfill
 $ npm install  --save-dev node-sass style-loader css-loader sass-loader
 $ npm install --save-dev mini-css-extract-plugin
 ```
+```
+yarn init
+yarn add --dev @babel/core @babel/cli
+yarn add --dev @babel/preset-env
+yarn add --dev @babel/plugin-proposal-class-properties
+yarn add --dev webpack webpack-cli
+yarn add --dev babel-loader
+yarn add @babel/polyfill
+yarn add --dev node-sass style-loader css-loader sass-loader
+yarn add --dev mini-css-extract-plugin
+```
+
 
 ## package.json
 ### -babel만 설치 시
@@ -81,3 +93,8 @@ module.exports = {
   mode: 'development'
 };
 ```
+
+# server 설치 및 세팅
+
+yarn add express
+yarn add ejs
