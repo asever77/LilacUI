@@ -11,7 +11,7 @@ module.exports = {
   ],
   // 컴파일 + 번들링된 js 파일이 저장될 경로와 이름 지정
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname + '/RetortUI/', 'dist'),
     filename: 'js/ui.base.js'
   },
   target: ['web', 'es5'],
@@ -24,7 +24,7 @@ module.exports = {
       {
         test: /\.js$/,
         include: [
-          path.resolve(__dirname, 'src/js')
+          path.resolve(__dirname + '/RetortUI/', 'src/js')
         ],
         use: {
           loader: 'babel-loader',
