@@ -1,0 +1,65 @@
+<input type="hidden" id="uiJsName" value="pageInputFormat">
+
+<div class="tit-catagory">Contents</div>
+<div class="tit-wrap">
+	<h1 class="h-1">Input Form</h1>
+</div>
+
+<h2 class="h-2">Base Style</h2>
+<h3 class="h-3">Input</h3>
+
+<div class="wrap-inp">
+	<form>
+		<input class="inp-base" type="text" value="" placeholder="input text">
+		<input class="inp-base" type="password" value="" placeholder="input password" autocomplete="off">
+		<input class="inp-base" type="tel" value="" placeholder="input tel">
+		<input class="inp-base" type="search" value="" placeholder="input search">
+		<input class="inp-base" type="number" value="" placeholder="input number">
+		<input class="inp-base" type="email" value="" placeholder="input email">
+		<input class="inp-base" type="url" value="" placeholder="input url">
+
+		<input class="inp-base" type="date" value="" placeholder="input date">
+		<input class="inp-base" type="month" value="" placeholder="input month">
+		<input class="inp-base" type="time" value="" placeholder="input time">
+
+		<input class="inp-base" type="range" value="" placeholder="input range">
+	</form>
+</div>
+
+<h3 class="h-3">Textarea</h3>
+<textarea name="form_address" class="inp-base" placeholder="100글자 이내로 입력하세요."></textarea>
+
+<h3 class="h-3">Radio & Checkbox</h3>
+<fieldset role="group">
+	<legend>차종선택</legend>
+	<input type="checkbox" id="uiChk2_1" checkgroup="uiChk2" name="form_cartype">
+	<label class="lb-check" for="uiChk2_1"><span>경형</span></label>
+
+	<input type="checkbox" id="uiChk2_2" checkgroup="uiChk2" name="form_cartype">
+	<label class="lb-check" for="uiChk2_2"><span>소형</span></label>
+
+	<input type="checkbox" id="uiChk2_3" checkgroup="uiChk2" name="form_cartype">
+	<label class="lb-check" for="uiChk2_3"><span>중형</span></label>
+</fieldset>
+
+<fieldset role="group">
+	<legend>인증선택</legend>
+	<input type="radio" name="form_ctg" id="r2_1">
+	<label class="lb-radio" for="r2_1"><span>공인인증</span></label>
+	<input type="radio" name="form_ctg" id="r2_2">
+	<label class="lb-radio" for="r2_2"><span>카드인증</span></label>
+</fieldset>
+
+<h3 class="h-3">Select</h3>
+<div class="ui-select">
+	<select title="카드번호 선택">
+		<option disabled selected>선택하세요</option>
+		<option value="1">신한카드 908*****2*5**</option>
+		<option value="2">시티카드 908*****2*5**</option>
+		<option value="3">현대카드 908*****2*5**</option>
+	</select>
+</div>
+
+
+
+

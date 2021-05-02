@@ -7,7 +7,8 @@ $ npm install --save-dev @babel/plugin-proposal-class-properties
 $ npm install --save-dev webpack webpack-cli
 $ npm install --save-dev babel-loader
 $ npm install @babel/polyfill
-$ npm install  --save-dev node-sass style-loader css-loader sass-loader
+$ npm install --save-dev node-sass style-loader css-loader sass-loader
+$ npm install --save-dev html-webpack-plugin
 $ npm install --save-dev mini-css-extract-plugin
 ```
 ```
